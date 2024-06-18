@@ -5,10 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Live Stream</title>
+  <style>
+    #live-label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: red;
+      color: white;
+      padding: 5px 10px;
+      font-size: 13px;
+      border-radius: 5px;
+    }
+    #video-container {
+      position: relative;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-  <h2>Live Stream</h2>
-  <section>
+  
+  <section id="video-container">
+    <div id="live-label">live stream</div>
     <video id="video" width="100%" controls></video>
   </section>
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
